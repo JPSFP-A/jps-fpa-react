@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg:       #0f1117;
+  --color-surface:  #1a1d27;
+  --color-surface2: #22263a;
+  --color-border:   #2d3248;
+  --color-accent:   #6c7bff;
+  --color-accent2:  #4ade80;
+  --color-accent3:  #fb923c;
+  --color-accent4:  #f472b6;
+  --color-warn:     #facc15;
+  --color-danger:   #f87171;
+  --color-fg:       #e2e8f0;
+  --color-muted:    #94a3b8;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background-color: #0f1117;
+  color: #e2e8f0;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  font-size: 13px;
+}
+
+#root { height: 100vh; display: flex; flex-direction: column; }
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: #1a1d27; }
+::-webkit-scrollbar-thumb { background: #2d3248; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+
+/* Recharts tooltip fix */
+.recharts-tooltip-wrapper { outline: none; }
